@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 body {
     position: relative;
     width: 1440px;
@@ -16,28 +14,32 @@ body {
     top: 0;
     width: 1440px;
     height: 126px;
-    z-index: 9999;
-    
+    z-index: 10;
+
 }
 
-.header.dark {
-    background: rgba(44, 49, 50, 0.9);
-}
-
-.header-picture {
+.header-background::before {
+    content: "";
     position: absolute;
-    width: 1440px;
-    height: 916px;
-
-
-    background: linear-gradient(180deg,
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.2) 15.75%,
-            rgba(0, 0, 0, 0) 100%),
-        linear-gradient(0deg,
-            rgba(61, 58, 59, 0.1),
-            rgba(61, 58, 59, 0.1));
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200vw;
+    height: 100%;
+    z-index: -1;
 }
+
+
+.header.dark::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200vw;
+    height: 100%;
+    background-color: rgba(44, 49, 50, 0.9);
+    z-index: -1;
+}
+
 
 .logo {
     position: absolute;
@@ -58,7 +60,7 @@ body {
 
 .header-menu-text {
 
-    font-family: 'Open Sans', SFMono-Regular;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -130,7 +132,7 @@ body {
     left: 841px;
     top: 25px;
 
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', SFMono-Regular;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -151,6 +153,21 @@ body {
 
 /* ------- О компании ------- */
 
+.about-company-picture {
+    position: absolute;
+    width: 1440px;
+    height: 916px;
+
+
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 15.75%,
+            rgba(0, 0, 0, 0) 100%),
+        linear-gradient(0deg,
+            rgba(61, 58, 59, 0.1),
+            rgba(61, 58, 59, 0.1));
+}
+
 .about-company-frame {
     /* AboutCompany */
 
@@ -158,6 +175,8 @@ body {
     position: absolute;
     width: 1296px;
     height: 790px;
+    left: 72px;
+    top: 126px;
 
 
 }
@@ -165,7 +184,6 @@ body {
 .about-company-frame-text {
     /* Мы работаем над каждым проектом индивидуально, 
     чтобы создать 3D модели выского качества */
-
 
     position: absolute;
     width: 856px;
@@ -183,6 +201,227 @@ body {
 
     color: #FFFFFF;
 
+
+}
+
+.about-company-frame-text-background {
+    position: absolute;
+    width: 928px;
+    height: 288px;
+    left: 0px;
+    top: 545px;
+
+    background: linear-gradient(90deg,
+            rgba(44, 49, 50, 0.9) 0%,
+            rgba(44, 49, 50, 0) 100%);
 }
 
 /* ------- О компании ------- */
+
+/* ------- Услуги ------- */
+
+.service-frame {
+    position: absolute;
+    width: 1296px;
+    height: 833px;
+    left: 72px;
+    top: 1066px;
+}
+
+
+.service-frame-header {
+    /* Услуги */
+
+
+    position: absolute;
+    height: 65px;
+    left: 550px;
+    right: 550px;
+    top: 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5EBBEA;
+
+}
+
+
+.service-frame-3d-models-group {
+    /* 3dModels */
+
+
+    position: absolute;
+    width: 432px;
+    height: 52px;
+    left: 0px;
+    top: 0px;
+
+
+}
+
+.service-frame-3d-models {
+    /* 3D модели */
+
+
+    position: absolute;
+    width: 147px;
+    height: 38px;
+    left: 143px;
+    top: 93px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5EBBEA;
+
+}
+
+.service-frame-3d-models-line {
+
+    position: absolute;
+    width: 432px;
+
+    left: 0px;
+    top: 135px;
+
+    border: 2px solid #5EBBEA;
+
+}
+
+
+.service-frame-visualisation-group {
+    /* Visualisation */
+
+
+    position: absolute;
+    width: 432px;
+    height: 52px;
+    left: 432px;
+    top: 0px;
+
+}
+
+.service-frame-visualisation {
+    /* Визуализация */
+
+
+    position: absolute;
+    width: 193px;
+    height: 38px;
+    left: 552px;
+    top: 93px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.service-frame-visualisation-line {
+
+    position: absolute;
+    width: 432px;
+
+    left: 432px;
+    top: 135px;
+
+    border: 2px solid #FFFFFF;
+
+}
+
+
+
+.service-frame-3d-printing-group {
+    /* 3dPrinting */
+
+
+    position: absolute;
+    width: 432px;
+    height: 43px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.service-frame-3d-printing {
+    /* 3D печать */
+
+
+    position: absolute;
+    width: 139px;
+    height: 38px;
+    left: 1011px;
+    top: 93px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.service-frame-3d-printing-line {
+    position: absolute;
+    width: 432px;
+    left: 864px;
+    top: 135px;
+
+    border: 2px solid #FFFFFF;
+}
+
+.service-frame-example {
+    position: absolute;
+    width: 1296px;
+    height: 667px;
+    left: 0px;
+    top: 166px;
+
+}
+
+.service-frame-text-block {
+    position: absolute;
+    width: 526px;
+    height: 330px;
+    left: 660px;
+    top: 306px;
+}
+
+.service-frame-example-rectangle {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0%;
+    bottom: 0%;
+
+    background: rgba(44, 49, 50, 0.7);
+    border-radius: 15px;
+}
+
+
+/* ------- Услуги ------- */
