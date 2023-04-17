@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-body{
+body {
     position: relative;
     width: 1440px;
     height: 4782px;
@@ -8,26 +8,35 @@ body{
     background: #2C3132;
 }
 
+
+/* ------- Шапка ------- */
 .header {
-    position: absolute;
+    /* Header */
+    position: fixed;
+    top: 0;
     width: 1440px;
     height: 126px;
-    left: 0px;
-    top: 0px;
+    z-index: 9999;
+    
+}
+
+.header.dark {
+    background: rgba(44, 49, 50, 0.9);
 }
 
 .header-picture {
     position: absolute;
     width: 1440px;
     height: 916px;
-    left: 0px;
-    top: 0px;
+
 
     background: linear-gradient(180deg,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0.2) 15.75%,
-    rgba(0, 0, 0, 0) 100%),
-    linear-gradient(0deg, rgba(61, 58, 59, 0.1), rgba(61, 58, 59, 0.1));
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 15.75%,
+            rgba(0, 0, 0, 0) 100%),
+        linear-gradient(0deg,
+            rgba(61, 58, 59, 0.1),
+            rgba(61, 58, 59, 0.1));
 }
 
 .logo {
@@ -97,34 +106,31 @@ body{
     top: 25px;
 }
 
-.make-order-button-menu {
-    position: absolute;
-    width: 306px;
-    height: 60px;
-    left: 768px;
-    top: 11px;
-}
 
-.make-order-borders-button-menu{
+
+.make-order-borders-button-menu {
     box-sizing: border-box;
 
     position: absolute;
     width: 306px;
     height: 60px;
-    left: 768px;
+    left: 770px;
     top: 11px;
 
     border: 1px solid #FFFFFF;
 }
 
 .make-order-text-menu {
+    /* Сделать заказ */
+
+
     position: absolute;
-    width: 306px;
+    width: 164px;
     height: 33px;
-    left: 768px;
+    left: 841px;
     top: 25px;
 
-    font-family: 'Open Sans', SFMono-Regular;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -136,4 +142,47 @@ body{
     text-align: center;
 
     color: #FFFFFF;
+
 }
+
+/* ------- Шапка ------- */
+
+
+
+/* ------- О компании ------- */
+
+.about-company-frame {
+    /* AboutCompany */
+
+
+    position: absolute;
+    width: 1296px;
+    height: 790px;
+
+
+}
+
+.about-company-frame-text {
+    /* Мы работаем над каждым проектом индивидуально, 
+    чтобы создать 3D модели выского качества */
+
+
+    position: absolute;
+    width: 856px;
+    height: 288px;
+    left: 0px;
+    top: 419px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+/* ------- О компании ------- */
