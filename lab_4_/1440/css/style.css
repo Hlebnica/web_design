@@ -1,4 +1,5 @@
 body {
+    overflow: auto;
     position: relative;
     width: 1440px;
     height: 4782px;
@@ -6,6 +7,9 @@ body {
     background: #2C3132;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
 
 /* ------- Шапка ------- */
 .header {
@@ -423,5 +427,180 @@ body {
     border-radius: 15px;
 }
 
+.service-frame-text {
+
+
+    position: absolute;
+    width: 416px;
+    height: 330px;
+    left: 55px;
+    top: 0.5px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+
+}
 
 /* ------- Услуги ------- */
+
+
+
+/* ------- Портфолио ------- */
+
+.portfolio-frame {
+    position: absolute;
+    width: 1116px;
+    height: 1116px;
+    left: 82px;
+    top: 2073px;
+}
+
+.portfolio-frame-variant1 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 0px;
+    top: 0px;
+}
+
+.portfolio-frame-variant2 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 432px;
+    top: 0px;
+}
+
+.portfolio-frame-variant3 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 864px;
+    top: 0px;
+}
+
+.portfolio-frame-variant4 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 0px;
+    top: 432px;
+
+
+}
+
+.portfolio-frame-variant-middle {
+    /* portfolioMiddle */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 8px;
+    gap: 30px;
+
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 432px;
+    top: 432px;
+
+    background: #2C3132;
+}
+
+.portfolio-frame-header {
+    width: 287px;
+    height: 65px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5EBBEA;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.portfolio-frame-variant-middle-description {
+    width: 416px;
+    height: 132px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.portfolio-frame-variant5 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 864px;
+    top: 432px;
+
+
+}
+
+.portfolio-frame-variant6 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 0px;
+    top: 864px;
+}
+
+.portfolio-frame-variant7 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 432px;
+    top: 864px;
+}
+
+.portfolio-frame-variant8 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 864px;
+    top: 864px;
+
+}
+
+
+/* ------- Портфолио ------- */
