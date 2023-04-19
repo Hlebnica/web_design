@@ -1,6 +1,6 @@
 body {
     overflow: auto;
-    position: relative;
+
     width: 1440px;
     height: 4782px;
 
@@ -158,19 +158,24 @@ body::-webkit-scrollbar {
 /* ------- О компании ------- */
 
 .about-company-picture {
-    position: absolute;
-    width: 1440px;
     height: 916px;
-
-
-    background: linear-gradient(180deg,
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.2) 15.75%,
-            rgba(0, 0, 0, 0) 100%),
-        linear-gradient(0deg,
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/about_company_picture.png'), linear-gradient(180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 15.75%,
+    rgba(0, 0, 0, 0) 100%),
+    linear-gradient(0deg,
             rgba(61, 58, 59, 0.1),
             rgba(61, 58, 59, 0.1));
+    background-size: cover;
+    background-position: center;
 }
+
+
 
 .about-company-frame {
     /* AboutCompany */
@@ -604,3 +609,130 @@ body::-webkit-scrollbar {
 
 
 /* ------- Портфолио ------- */
+
+
+/* ------- Стоимость услуг ------- */
+
+.cost-of-service-frame{
+    /* CostOfServices */
+    position: absolute;
+    width: 1296px;
+    height: 478px;
+    left: 72px;
+    top: 3495px;
+
+}
+
+.cost-of-service-header-text{
+    /* Стоимость услуг */
+
+    position: absolute;
+    height: 65px;
+    left: 438px;
+    right: 439px;
+    top: 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5EBBEA;
+}
+
+.cost-service-frame-headers-font{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.cost-service-type-of-header{
+    position: absolute;
+    width: 173px;
+    height: 41px;
+    left: 122px;
+    top: 95px;
+
+}
+
+.cost-service-timeline-header{
+    /* Сроки */
+
+    position: absolute;
+    width: 97px;
+    height: 41px;
+    left: 600px;
+    top: 95px;
+}
+
+.cost-service-cost-header {
+    /* Стоимость */
+
+
+    position: absolute;
+    width: 171px;
+    height: 41px;
+    left: 1003px;
+    top: 95px;
+
+}
+
+.cost-service-frame-headers-font{
+    /* Шрифт простого текста */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.cost-service-type-of-3d-model{
+    /* 3D модель */
+    position: absolute;
+    width: 125px;
+    height: 33px;
+    left: 145px;
+    top: 181px;
+}
+
+.cost-service-type-of-visualisation{
+    /* Визуализация */
+    position: absolute;
+    width: 166px;
+    height: 33px;
+    left: 125px;
+    top: 284px;
+}
+
+.cost-service-type-of-3d-printing{
+    /* 3D печать */
+    position: absolute;
+    width: 120px;
+    height: 33px;
+    left: 148px;
+    top: 387px;
+
+}
+
+/* ------- Стоимость услуг ------- */

@@ -1,8 +1,8 @@
 window.addEventListener('scroll', function() {
-    var header = document.querySelector('.header');
-    var height = header.offsetHeight;
-    
-    if (window.pageYOffset >= height) {
+    const header = document.querySelector('.header');
+    const height = header.offsetHeight;
+
+    if (window.scrollY >= height) {
       header.classList.add('dark');
     } else {
       header.classList.remove('dark');
