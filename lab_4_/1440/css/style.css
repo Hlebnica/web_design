@@ -11,6 +11,23 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+
+.my-button {
+    box-sizing: border-box;
+    width: 306px;
+    height: 60px;
+    border: 1px solid #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+    background: #2C3132;
+    color: #FFFFFF;
+}
+
 /* ------- Шапка ------- */
 .header {
     /* Header */
@@ -690,7 +707,7 @@ body::-webkit-scrollbar {
 
 }
 
-.cost-service-frame-headers-font{
+.cost-service-frame-font{
     /* Шрифт простого текста */
     font-family: 'Open Sans';
     font-style: normal;
@@ -735,4 +752,114 @@ body::-webkit-scrollbar {
 
 }
 
+.cost-of-service-timeline-first{
+    /* 1 — 10 дней */
+
+
+    position: absolute;
+    width: 142px;
+    height: 33px;
+    left: 585px;
+    top: 181px;
+
+}
+
+.cost-of-service-timeline-second{
+    /* 3 — 14 дней */
+
+
+    position: absolute;
+    width: 142px;
+    height: 33px;
+    left: 585px;
+    top: 284px;
+}
+
+.cost-of-service-timeline-thirty{
+    /* 3 — 7 дней */
+
+
+    position: absolute;
+    width: 128px;
+    height: 33px;
+    left: 593px;
+    top: 387px;
+}
+
+.cost-of-service-cost-first{
+    /* от 5000 ₽ */
+    position: absolute;
+    width: 108px;
+    height: 33px;
+    left: 1034px;
+    top: 181px;
+
+}
+
+.cost-of-service-cost-second{
+    /* от 8000 ₽ */
+    position: absolute;
+    width: 108px;
+    height: 33px;
+    left: 1034px;
+    top: 284px;
+}
+
+.cost-of-service-cost-thirty{
+    /* от 1000 ₽ */
+    position: absolute;
+    width: 108px;
+    height: 33px;
+    left: 1034px;
+    top: 387px;
+}
+
+.cost-service-frame-line-first{
+    position: absolute;
+    width: 1296px;
+    height: 0px;
+    left: 0px;
+    top: 229px;
+
+    border: 2px solid #FFFFFF;
+}
+
+.cost-service-frame-line-second{
+    position: absolute;
+    width: 1296px;
+    height: 0px;
+    left: 0px;
+    top: 332px;
+
+    border: 2px solid #FFFFFF;
+}
+
+.cost-service-frame-line-thirty{
+    position: absolute;
+    height: 0px;
+    left: 0px;
+    right: 0px;
+    top: 434px;
+
+    border: 2px solid #FFFFFF;
+}
+
 /* ------- Стоимость услуг ------- */
+
+
+/* ------- Сделать заказ ------- */
+.make-order-frame{
+    /* Order */
+    position: absolute;
+    width: 1296px;
+    height: 372px;
+    left: 72px;
+    top: 4080px;
+
+}
+
+
+
+
+
+/* ------- Сделать заказ ------- */
