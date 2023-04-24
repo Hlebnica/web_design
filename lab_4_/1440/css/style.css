@@ -2,13 +2,21 @@ body {
     overflow: auto;
 
     width: 1440px;
-    height: 4782px;
 
     background: #2C3132;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 
@@ -130,7 +138,6 @@ body::-webkit-scrollbar {
 }
 
 
-
 .make-order-borders-button-menu {
     box-sizing: border-box;
 
@@ -171,7 +178,6 @@ body::-webkit-scrollbar {
 /* ------- Шапка ------- */
 
 
-
 /* ------- О компании ------- */
 
 .about-company-picture {
@@ -182,16 +188,15 @@ body::-webkit-scrollbar {
     right: 0;
     bottom: 0;
     background-image: url('../img/about_company_picture.png'), linear-gradient(180deg,
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.2) 15.75%,
-            rgba(0, 0, 0, 0) 100%),
-        linear-gradient(0deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 15.75%,
+    rgba(0, 0, 0, 0) 100%),
+    linear-gradient(0deg,
             rgba(61, 58, 59, 0.1),
             rgba(61, 58, 59, 0.1));
     background-size: cover;
     background-position: center;
 }
-
 
 
 .about-company-frame {
@@ -238,8 +243,8 @@ body::-webkit-scrollbar {
     top: 545px;
 
     background: linear-gradient(90deg,
-            rgba(44, 49, 50, 0.9) 0%,
-            rgba(44, 49, 50, 0) 100%);
+    rgba(44, 49, 50, 0.9) 0%,
+    rgba(44, 49, 50, 0) 100%);
 }
 
 /* ------- О компании ------- */
@@ -315,16 +320,28 @@ body::-webkit-scrollbar {
 
 }
 
-.service-frame-3d-models-line {
+.service-frame-3d-models.default-link-color {
+    color: #FFFFFF;
+}
 
+.service-frame-3d-models.clicked-link-color {
+    color: #5EBBEA;
+}
+
+.service-frame-3d-models-line {
     position: absolute;
     width: 432px;
-
     left: 0px;
     top: 135px;
-
     border: 2px solid #5EBBEA;
+}
 
+.service-frame-3d-models-line.default-link-color {
+    border: 2px solid #FFFFFF;
+}
+
+.service-frame-3d-models-line.clicked-link-color {
+    border: 2px solid #5EBBEA;
 }
 
 
@@ -360,8 +377,14 @@ body::-webkit-scrollbar {
     text-align: center;
 
     color: #FFFFFF;
+}
 
+.service-frame-visualisation.default-link-color {
+    color: #FFFFFF;
+}
 
+.service-frame-visualisation.clicked-link-color {
+    color: #5EBBEA;
 }
 
 .service-frame-visualisation-line {
@@ -376,6 +399,13 @@ body::-webkit-scrollbar {
 
 }
 
+.service-frame-visualisation-line.default-link-color {
+    border: 2px solid #FFFFFF;
+}
+
+.service-frame-visualisation-line.clicked-link-color {
+    border: 2px solid #5EBBEA;
+}
 
 
 .service-frame-3d-printing-group {
@@ -412,6 +442,15 @@ body::-webkit-scrollbar {
     color: #FFFFFF;
 }
 
+.service-frame-3d-printing.default-link-color {
+    color: #FFFFFF;
+}
+
+.service-frame-3d-printing.clicked-link-color {
+    color: #5EBBEA;
+}
+
+
 .service-frame-3d-printing-line {
     position: absolute;
     width: 432px;
@@ -421,13 +460,35 @@ body::-webkit-scrollbar {
     border: 2px solid #FFFFFF;
 }
 
+.service-frame-3d-printing-line.default-link-color {
+    border: 2px solid #FFFFFF;
+}
+
+.service-frame-3d-printing-line.clicked-link-color {
+    border: 2px solid #5EBBEA;
+}
+
+
 .service-frame-example {
     position: absolute;
     width: 1296px;
     height: 667px;
     left: 0px;
     top: 166px;
+    background-image: url('../img/3d_model_example.png');
+}
 
+
+.service-frame-example.new-image1 {
+    background-image: url('../img/3d_model_example.png');
+}
+
+.service-frame-example.new-image2 {
+    background-image: url('../img/3d_visualisation_example.png');
+}
+
+.service-frame-example.new-image3 {
+    background-image: url('../img/3d_printing_example.png');
 }
 
 .service-frame-text-block {
@@ -449,9 +510,8 @@ body::-webkit-scrollbar {
     border-radius: 15px;
 }
 
-.service-frame-text {
-
-
+.service-frame-text::before {
+    content: "Создаем высококачественные и реалистичные 3D  модели на заказ для различных отраслей, работая в тесном сотрудничестве с клиентами.";
     position: absolute;
     width: 416px;
     height: 330px;
@@ -469,12 +529,23 @@ body::-webkit-scrollbar {
 
     color: #FFFFFF;
 
-
-
 }
 
-/* ------- Услуги ------- */
+.service-frame-text.new-text1::before {
+    content: "Создаем высококачественные и реалистичные 3D  модели на заказ для различных отраслей, работая в тесном сотрудничестве с клиентами.";
+}
 
+.service-frame-text.new-text2::before {
+    content: "Создаем фотореалистичную визуализацию 3D моделей на заказ, используя передовые технологии и программное обеспечение.";
+}
+
+.service-frame-text.new-text3::before {
+    content: "Создаем 3D печать на заказ с использованием передовых технологий и широкого выбора материалов, реализуя объекты любой сложности.";
+}
+
+
+
+/* ------- Услуги ------- */
 
 
 /* ------- Портфолио ------- */
@@ -947,6 +1018,303 @@ body::-webkit-scrollbar {
 
 }
 
-.make-order- {}
+.my-input1[type="text"] {
+    border: none;
+    border-bottom: 2px solid white;
+    height: 60px;
+    width: 416px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    color: #FFFFFF;
+
+    background: #2C3132;
+}
+
+.my-input2[type="text"] {
+    border: none;
+    border-bottom: 2px solid white;
+    height: 60px;
+    width: 635px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    color: #FFFFFF;
+
+    background: #2C3132;
+}
+
+.make-order-text-box-your-name {
+    position: absolute;
+    width: 416px;
+    height: 60px;
+    left: 0px;
+    top: 136px;
+}
+
+
+.make-order-text-box-your-phone {
+    position: absolute;
+    width: 416px;
+    height: 60px;
+    left: 440px;
+    top: 136px;
+}
+
+.make-order-text-box-your-email {
+    position: absolute;
+    width: 416px;
+    height: 60px;
+    left: 880px;
+    top: 136px;
+}
+
+.make-order-your-message {
+    /* Ваше сообщение */
+
+
+    position: absolute;
+    width: 253px;
+    height: 38px;
+    left: 0px;
+    top: 271px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.make-order-text-box-your-message {
+    position: absolute;
+    width: 635px;
+    height: 60px;
+    left: 0px;
+    top: 312px;
+
+}
+
+.make-order-add-file-button {
+    /* AddFile */
+    position: absolute;
+    width: 306px;
+    height: 60px;
+    left: 660px;
+    top: 312px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.make-order-send-file-button {
+    /* SendFile */
+    position: absolute;
+    width: 306px;
+    height: 60px;
+    left: 990px;
+    top: 312px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+
+
+}
 
 /* ------- Сделать заказ ------- */
+
+
+/*-------------Footer-------------*/
+
+.footer-frame {
+    /* Footer */
+    position: absolute;
+    width: 1296px;
+    height: 180px;
+    left: 72px;
+    top: 4662px;
+
+}
+
+.footer-address-header {
+    /* Адрес */
+
+
+    position: absolute;
+    width: 92px;
+    height: 44px;
+    left: 169px;
+    top: 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.footer-address-text {
+    /* Челябинск, ул. Пушкина 12 */
+
+
+    position: absolute;
+    width: 371px;
+    height: 38px;
+    left: 31px;
+    top: 71px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+
+.footer-phone-header {
+    /* Телефон */
+
+
+    position: absolute;
+    width: 135px;
+    height: 44px;
+    left: 580px;
+    top: 1px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.footer-phone-text {
+    /* +7 (495) 812-64-33 */
+
+
+    position: absolute;
+    width: 242px;
+    height: 38px;
+    left: 527px;
+    top: 70.5px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.footer-email-header {
+    /* Электронный адрес */
+
+
+    position: absolute;
+    width: 310px;
+    height: 44px;
+    left: 933px;
+    top: 0.5px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.footer-email-text {
+    /* 3dLab@gmail.com */
+
+
+    position: absolute;
+    width: 240px;
+    height: 38px;
+    left: 968px;
+    top: 70.5px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.footer-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 240px;
+    top: 4602px;
+    background: #1F2324;
+    background-blend-mode: luminosity;
+    z-index: -1;
+}
+
+
+/*-------------Footer-------------*/
