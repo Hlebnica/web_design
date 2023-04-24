@@ -1020,7 +1020,7 @@ a:hover {
 
 .my-input1[type="text"] {
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #959898;
     height: 60px;
     width: 416px;
     left: 0%;
@@ -1034,14 +1034,20 @@ a:hover {
     font-size: 28px;
     line-height: 38px;
     display: flex;
-    color: #FFFFFF;
+    color: #ffffff;
 
     background: #2C3132;
 }
 
+.my-input1:hover{
+    border-bottom: 2px solid #ffffff;
+}
+
+
+
 .my-input2[type="text"] {
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #959898;
     height: 60px;
     width: 635px;
     left: 0%;
@@ -1055,10 +1061,15 @@ a:hover {
     font-size: 28px;
     line-height: 38px;
     display: flex;
-    color: #FFFFFF;
+    color: #ffffff;
 
     background: #2C3132;
 }
+
+.my-input2:hover{
+    border-bottom: 2px solid #ffffff;
+}
+
 
 .make-order-text-box-your-name {
     position: absolute;
