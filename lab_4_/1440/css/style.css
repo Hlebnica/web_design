@@ -24,7 +24,7 @@ body::-webkit-scrollbar {
     line-height: 33px;
     align-items: center;
     text-align: center;
-    background: #2C3132;
+    background: transparent;
     color: #FFFFFF;
 }
 
@@ -153,18 +153,18 @@ body::-webkit-scrollbar {
     left: 841px;
     top: 25px;
 
-    font-family: 'Open Sans', SFMono-Regular;
+    /* font-family: 'Open Sans', SFMono-Regular;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
-    /* identical to box height */
+    
 
     display: flex;
     align-items: center;
     text-align: center;
 
-    color: #FFFFFF;
+    color: #FFFFFF; */
 
 }
 
@@ -182,10 +182,10 @@ body::-webkit-scrollbar {
     right: 0;
     bottom: 0;
     background-image: url('../img/about_company_picture.png'), linear-gradient(180deg,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0.2) 15.75%,
-    rgba(0, 0, 0, 0) 100%),
-    linear-gradient(0deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.2) 15.75%,
+            rgba(0, 0, 0, 0) 100%),
+        linear-gradient(0deg,
             rgba(61, 58, 59, 0.1),
             rgba(61, 58, 59, 0.1));
     background-size: cover;
@@ -630,7 +630,7 @@ body::-webkit-scrollbar {
 
 /* ------- Стоимость услуг ------- */
 
-.cost-of-service-frame{
+.cost-of-service-frame {
     /* CostOfServices */
     position: absolute;
     width: 1296px;
@@ -640,7 +640,7 @@ body::-webkit-scrollbar {
 
 }
 
-.cost-of-service-header-text{
+.cost-of-service-header-text {
     /* Стоимость услуг */
 
     position: absolute;
@@ -661,7 +661,7 @@ body::-webkit-scrollbar {
     color: #5EBBEA;
 }
 
-.cost-service-frame-headers-font{
+.cost-service-frame-headers-font {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -676,7 +676,7 @@ body::-webkit-scrollbar {
     color: #FFFFFF;
 }
 
-.cost-service-type-of-header{
+.cost-service-type-of-header {
     position: absolute;
     width: 173px;
     height: 41px;
@@ -685,7 +685,7 @@ body::-webkit-scrollbar {
 
 }
 
-.cost-service-timeline-header{
+.cost-service-timeline-header {
     /* Сроки */
 
     position: absolute;
@@ -707,7 +707,7 @@ body::-webkit-scrollbar {
 
 }
 
-.cost-service-frame-font{
+.cost-service-frame-font {
     /* Шрифт простого текста */
     font-family: 'Open Sans';
     font-style: normal;
@@ -724,7 +724,7 @@ body::-webkit-scrollbar {
 
 }
 
-.cost-service-type-of-3d-model{
+.cost-service-type-of-3d-model {
     /* 3D модель */
     position: absolute;
     width: 125px;
@@ -733,7 +733,7 @@ body::-webkit-scrollbar {
     top: 181px;
 }
 
-.cost-service-type-of-visualisation{
+.cost-service-type-of-visualisation {
     /* Визуализация */
     position: absolute;
     width: 166px;
@@ -742,7 +742,7 @@ body::-webkit-scrollbar {
     top: 284px;
 }
 
-.cost-service-type-of-3d-printing{
+.cost-service-type-of-3d-printing {
     /* 3D печать */
     position: absolute;
     width: 120px;
@@ -752,7 +752,7 @@ body::-webkit-scrollbar {
 
 }
 
-.cost-of-service-timeline-first{
+.cost-of-service-timeline-first {
     /* 1 — 10 дней */
 
 
@@ -764,7 +764,7 @@ body::-webkit-scrollbar {
 
 }
 
-.cost-of-service-timeline-second{
+.cost-of-service-timeline-second {
     /* 3 — 14 дней */
 
 
@@ -775,7 +775,7 @@ body::-webkit-scrollbar {
     top: 284px;
 }
 
-.cost-of-service-timeline-thirty{
+.cost-of-service-timeline-thirty {
     /* 3 — 7 дней */
 
 
@@ -786,7 +786,7 @@ body::-webkit-scrollbar {
     top: 387px;
 }
 
-.cost-of-service-cost-first{
+.cost-of-service-cost-first {
     /* от 5000 ₽ */
     position: absolute;
     width: 108px;
@@ -796,7 +796,7 @@ body::-webkit-scrollbar {
 
 }
 
-.cost-of-service-cost-second{
+.cost-of-service-cost-second {
     /* от 8000 ₽ */
     position: absolute;
     width: 108px;
@@ -805,7 +805,7 @@ body::-webkit-scrollbar {
     top: 284px;
 }
 
-.cost-of-service-cost-thirty{
+.cost-of-service-cost-thirty {
     /* от 1000 ₽ */
     position: absolute;
     width: 108px;
@@ -814,7 +814,7 @@ body::-webkit-scrollbar {
     top: 387px;
 }
 
-.cost-service-frame-line-first{
+.cost-service-frame-line-first {
     position: absolute;
     width: 1296px;
     height: 0px;
@@ -824,7 +824,7 @@ body::-webkit-scrollbar {
     border: 2px solid #FFFFFF;
 }
 
-.cost-service-frame-line-second{
+.cost-service-frame-line-second {
     position: absolute;
     width: 1296px;
     height: 0px;
@@ -834,7 +834,7 @@ body::-webkit-scrollbar {
     border: 2px solid #FFFFFF;
 }
 
-.cost-service-frame-line-thirty{
+.cost-service-frame-line-thirty {
     position: absolute;
     height: 0px;
     left: 0px;
@@ -848,7 +848,7 @@ body::-webkit-scrollbar {
 
 
 /* ------- Сделать заказ ------- */
-.make-order-frame{
+.make-order-frame {
     /* Order */
     position: absolute;
     width: 1296px;
@@ -859,7 +859,94 @@ body::-webkit-scrollbar {
 }
 
 
+.make-order-header-text {
+    /* Сделать заказ */
 
 
+    position: absolute;
+    height: 65px;
+    left: 468px;
+    right: 467px;
+    top: 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5EBBEA;
+
+}
+
+
+.make-order-your-name {
+    /* Ваше имя */
+
+
+    position: absolute;
+    width: 148px;
+    height: 38px;
+    left: 0px;
+    top: 95px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.make-order-your-phone {
+    /* Ваш телефон */
+
+
+    position: absolute;
+    width: 196px;
+    height: 38px;
+    left: 440px;
+    top: 95px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.make-order-your-email {
+    /* Ваш E-mail */
+
+
+    position: absolute;
+    width: 196px;
+    height: 38px;
+    left: 880px;
+    top: 95px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.make-order- {}
 
 /* ------- Сделать заказ ------- */
