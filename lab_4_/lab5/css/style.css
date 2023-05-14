@@ -1,0 +1,1331 @@
+body {
+    overflow: auto;
+
+    width: 1440px;
+
+    background: #2C3132;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.my-button {
+    box-sizing: border-box;
+    width: 306px;
+    height: 60px;
+    border: 1px solid #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+/* ------- Шапка ------- */
+.header {
+    /* Header */
+    position: fixed;
+    top: 0;
+    width: 1440px;
+    height: 126px;
+    z-index: 10;
+
+}
+
+.header-background::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200vw;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.header.dark::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200vw;
+    height: 100%;
+    background-color: rgba(44, 49, 50, 0.9);
+    z-index: -1;
+}
+
+
+.logo {
+    position: absolute;
+    width: 196px;
+    height: 100px;
+    left: 72px;
+    top: 13px;
+}
+
+.header-menu {
+    position: absolute;
+    width: 1076px;
+    height: 82px;
+    left: 292px;
+    top: 20px;
+}
+
+
+.header-menu-text {
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.about-company-menu-text {
+    position: absolute;
+    width: 144px;
+    height: 33px;
+    left: 2px;
+    top: 25px;
+}
+
+.services-menu-text {
+    position: absolute;
+    width: 78px;
+    height: 33px;
+    left: 233px;
+    top: 25px;
+}
+
+
+.portfolio-menu-text {
+    position: absolute;
+    width: 133px;
+    height: 33px;
+    left: 396px;
+    top: 25px;
+}
+
+
+.prices-menu-text {
+    position: absolute;
+    width: 65px;
+    height: 33px;
+    left: 616px;
+    top: 25px;
+}
+
+
+.make-order-borders-button-menu {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 306px;
+    height: 60px;
+    left: 770px;
+    top: 11px;
+
+    border: 1px solid #FFFFFF;
+}
+
+.make-order-text-menu {
+    /* Сделать заказ */
+
+
+    position: absolute;
+    width: 164px;
+    height: 33px;
+    left: 841px;
+    top: 25px;
+
+    /* font-family: 'Open Sans', SFMono-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF; */
+
+}
+
+/* ------- Шапка ------- */
+
+
+/* ------- О компании ------- */
+
+.about-company-picture {
+    height: 916px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/about_company_picture.png'), linear-gradient(180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 15.75%,
+    rgba(0, 0, 0, 0) 100%),
+    linear-gradient(0deg,
+            rgba(61, 58, 59, 0.1),
+            rgba(61, 58, 59, 0.1));
+    background-size: cover;
+    background-position: center;
+}
+
+
+.about-company-frame {
+    /* AboutCompany */
+
+
+    position: absolute;
+    width: 1296px;
+    height: 790px;
+    left: 72px;
+    top: 126px;
+
+
+}
+
+.about-company-frame-text {
+    /* Мы работаем над каждым проектом индивидуально, 
+    чтобы создать 3D модели выского качества */
+
+    position: absolute;
+    width: 856px;
+    height: 288px;
+    left: 0px;
+    top: 419px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.about-company-frame-text-background {
+    position: absolute;
+    width: 928px;
+    height: 288px;
+    left: 0px;
+    top: 545px;
+
+    background: linear-gradient(90deg,
+    rgba(44, 49, 50, 0.9) 0%,
+    rgba(44, 49, 50, 0) 100%);
+}
+
+/* ------- О компании ------- */
+
+/* ------- Услуги ------- */
+
+.service-frame {
+    position: absolute;
+    width: 1296px;
+    height: 833px;
+    left: 72px;
+    top: 1066px;
+}
+
+
+.service-frame-header {
+    /* Услуги */
+
+
+    position: absolute;
+    height: 65px;
+    left: 550px;
+    right: 550px;
+    top: 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5EBBEA;
+
+}
+
+
+.service-frame-3d-models-group {
+    /* 3dModels */
+
+
+    position: absolute;
+    width: 432px;
+    height: 52px;
+    left: 0px;
+    top: 0px;
+
+
+}
+
+.service-frame-3d-models {
+    /* 3D модели */
+
+
+    position: absolute;
+    width: 147px;
+    height: 38px;
+    left: 143px;
+    top: 93px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5EBBEA;
+
+}
+
+.service-frame-3d-models.default-link-color {
+    color: #FFFFFF;
+}
+
+.service-frame-3d-models.clicked-link-color {
+    color: #5EBBEA;
+}
+
+.service-frame-3d-models-line {
+    position: absolute;
+    width: 432px;
+    left: 0px;
+    top: 135px;
+    border: 2px solid #5EBBEA;
+}
+
+.service-frame-3d-models-line.default-link-color {
+    border: 2px solid #FFFFFF;
+}
+
+.service-frame-3d-models-line.clicked-link-color {
+    border: 2px solid #5EBBEA;
+}
+
+
+.service-frame-visualisation-group {
+    /* Visualisation */
+
+
+    position: absolute;
+    width: 432px;
+    height: 52px;
+    left: 432px;
+    top: 0px;
+
+}
+
+.service-frame-visualisation {
+    /* Визуализация */
+
+
+    position: absolute;
+    width: 193px;
+    height: 38px;
+    left: 552px;
+    top: 93px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.service-frame-visualisation.default-link-color {
+    color: #FFFFFF;
+}
+
+.service-frame-visualisation.clicked-link-color {
+    color: #5EBBEA;
+}
+
+.service-frame-visualisation-line {
+
+    position: absolute;
+    width: 432px;
+
+    left: 432px;
+    top: 135px;
+
+    border: 2px solid #FFFFFF;
+
+}
+
+.service-frame-visualisation-line.default-link-color {
+    border: 2px solid #FFFFFF;
+}
+
+.service-frame-visualisation-line.clicked-link-color {
+    border: 2px solid #5EBBEA;
+}
+
+
+.service-frame-3d-printing-group {
+    /* 3dPrinting */
+
+
+    position: absolute;
+    width: 432px;
+    height: 43px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.service-frame-3d-printing {
+    /* 3D печать */
+
+
+    position: absolute;
+    width: 139px;
+    height: 38px;
+    left: 1011px;
+    top: 93px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.service-frame-3d-printing.default-link-color {
+    color: #FFFFFF;
+}
+
+.service-frame-3d-printing.clicked-link-color {
+    color: #5EBBEA;
+}
+
+
+.service-frame-3d-printing-line {
+    position: absolute;
+    width: 432px;
+    left: 864px;
+    top: 135px;
+
+    border: 2px solid #FFFFFF;
+}
+
+.service-frame-3d-printing-line.default-link-color {
+    border: 2px solid #FFFFFF;
+}
+
+.service-frame-3d-printing-line.clicked-link-color {
+    border: 2px solid #5EBBEA;
+}
+
+
+.service-frame-example {
+    position: absolute;
+    width: 1296px;
+    height: 667px;
+    left: 0px;
+    top: 166px;
+    background-image: url('../img/3d_model_example.png');
+}
+
+
+.service-frame-example.new-image1 {
+    background-image: url('../img/3d_model_example.png');
+}
+
+.service-frame-example.new-image2 {
+    background-image: url('../img/3d_visualisation_example.png');
+}
+
+.service-frame-example.new-image3 {
+    background-image: url('../img/3d_printing_example.png');
+}
+
+.service-frame-text-block {
+    position: absolute;
+    width: 526px;
+    height: 330px;
+    left: 660px;
+    top: 306px;
+}
+
+.service-frame-example-rectangle {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0%;
+    bottom: 0%;
+
+    background: rgba(44, 49, 50, 0.7);
+    border-radius: 15px;
+}
+
+.service-frame-text::before {
+    content: "Создаем высококачественные и реалистичные 3D  модели на заказ для различных отраслей, работая в тесном сотрудничестве с клиентами.";
+    position: absolute;
+    width: 416px;
+    height: 330px;
+    left: 55px;
+    top: 0.5px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.service-frame-text.new-text1::before {
+    content: "Создаем высококачественные и реалистичные 3D  модели на заказ для различных отраслей, работая в тесном сотрудничестве с клиентами.";
+}
+
+.service-frame-text.new-text2::before {
+    content: "Создаем фотореалистичную визуализацию 3D моделей на заказ, используя передовые технологии и программное обеспечение.";
+}
+
+.service-frame-text.new-text3::before {
+    content: "Создаем 3D печать на заказ с использованием передовых технологий и широкого выбора материалов, реализуя объекты любой сложности.";
+}
+
+
+
+/* ------- Услуги ------- */
+
+
+/* ------- Портфолио ------- */
+
+.portfolio-frame {
+    position: absolute;
+    width: 1116px;
+    height: 1116px;
+    left: 82px;
+    top: 2073px;
+}
+
+.portfolio-frame-variant1 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 0px;
+    top: 0px;
+}
+
+.portfolio-frame-variant2 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 432px;
+    top: 0px;
+}
+
+.portfolio-frame-variant3 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 864px;
+    top: 0px;
+}
+
+.portfolio-frame-variant4 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 0px;
+    top: 432px;
+
+
+}
+
+.portfolio-frame-variant-middle {
+    /* portfolioMiddle */
+
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 8px;
+    gap: 30px;
+
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 432px;
+    top: 432px;
+
+    background: #2C3132;
+}
+
+.portfolio-frame-header {
+    width: 287px;
+    height: 65px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5EBBEA;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.portfolio-frame-variant-middle-description {
+    width: 416px;
+    height: 132px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.portfolio-frame-variant5 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 864px;
+    top: 432px;
+
+
+}
+
+.portfolio-frame-variant6 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 0px;
+    top: 864px;
+}
+
+.portfolio-frame-variant7 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 432px;
+    top: 864px;
+}
+
+.portfolio-frame-variant8 {
+    position: absolute;
+    width: 432px;
+    height: 432px;
+    left: 864px;
+    top: 864px;
+
+}
+
+
+/* ------- Портфолио ------- */
+
+
+/* ------- Стоимость услуг ------- */
+
+.cost-of-service-frame {
+    /* CostOfServices */
+    position: absolute;
+    width: 1296px;
+    height: 478px;
+    left: 72px;
+    top: 3495px;
+
+}
+
+.cost-of-service-header-text {
+    /* Стоимость услуг */
+
+    position: absolute;
+    height: 65px;
+    left: 438px;
+    right: 439px;
+    top: 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5EBBEA;
+}
+
+.cost-service-frame-headers-font {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.cost-service-type-of-header {
+    position: absolute;
+    width: 173px;
+    height: 41px;
+    left: 122px;
+    top: 95px;
+
+}
+
+.cost-service-timeline-header {
+    /* Сроки */
+
+    position: absolute;
+    width: 97px;
+    height: 41px;
+    left: 600px;
+    top: 95px;
+}
+
+.cost-service-cost-header {
+    /* Стоимость */
+
+
+    position: absolute;
+    width: 171px;
+    height: 41px;
+    left: 1003px;
+    top: 95px;
+
+}
+
+.cost-service-frame-font {
+    /* Шрифт простого текста */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.cost-service-type-of-3d-model {
+    /* 3D модель */
+    position: absolute;
+    width: 125px;
+    height: 33px;
+    left: 145px;
+    top: 181px;
+}
+
+.cost-service-type-of-visualisation {
+    /* Визуализация */
+    position: absolute;
+    width: 166px;
+    height: 33px;
+    left: 125px;
+    top: 284px;
+}
+
+.cost-service-type-of-3d-printing {
+    /* 3D печать */
+    position: absolute;
+    width: 120px;
+    height: 33px;
+    left: 148px;
+    top: 387px;
+
+}
+
+.cost-of-service-timeline-first {
+    /* 1 — 10 дней */
+
+
+    position: absolute;
+    width: 142px;
+    height: 33px;
+    left: 585px;
+    top: 181px;
+
+}
+
+.cost-of-service-timeline-second {
+    /* 3 — 14 дней */
+
+
+    position: absolute;
+    width: 142px;
+    height: 33px;
+    left: 585px;
+    top: 284px;
+}
+
+.cost-of-service-timeline-thirty {
+    /* 3 — 7 дней */
+
+
+    position: absolute;
+    width: 128px;
+    height: 33px;
+    left: 593px;
+    top: 387px;
+}
+
+.cost-of-service-cost-first {
+    /* от 5000 ₽ */
+    position: absolute;
+    width: 108px;
+    height: 33px;
+    left: 1034px;
+    top: 181px;
+
+}
+
+.cost-of-service-cost-second {
+    /* от 8000 ₽ */
+    position: absolute;
+    width: 108px;
+    height: 33px;
+    left: 1034px;
+    top: 284px;
+}
+
+.cost-of-service-cost-thirty {
+    /* от 1000 ₽ */
+    position: absolute;
+    width: 108px;
+    height: 33px;
+    left: 1034px;
+    top: 387px;
+}
+
+.cost-service-frame-line-first {
+    position: absolute;
+    width: 1296px;
+    height: 0px;
+    left: 0px;
+    top: 229px;
+
+    border: 2px solid #FFFFFF;
+}
+
+.cost-service-frame-line-second {
+    position: absolute;
+    width: 1296px;
+    height: 0px;
+    left: 0px;
+    top: 332px;
+
+    border: 2px solid #FFFFFF;
+}
+
+.cost-service-frame-line-thirty {
+    position: absolute;
+    height: 0px;
+    left: 0px;
+    right: 0px;
+    top: 434px;
+
+    border: 2px solid #FFFFFF;
+}
+
+/* ------- Стоимость услуг ------- */
+
+
+/* ------- Сделать заказ ------- */
+.make-order-frame {
+    /* Order */
+    position: absolute;
+    width: 1296px;
+    height: 372px;
+    left: 72px;
+    top: 4080px;
+
+}
+
+
+.make-order-header-text {
+    /* Сделать заказ */
+
+
+    position: absolute;
+    height: 65px;
+    left: 468px;
+    right: 467px;
+    top: 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #5EBBEA;
+
+}
+
+
+.make-order-your-name {
+    /* Ваше имя */
+
+
+    position: absolute;
+    width: 148px;
+    height: 38px;
+    left: 0px;
+    top: 95px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.make-order-your-phone {
+    /* Ваш телефон */
+
+
+    position: absolute;
+    width: 196px;
+    height: 38px;
+    left: 440px;
+    top: 95px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.make-order-your-email {
+    /* Ваш E-mail */
+
+
+    position: absolute;
+    width: 196px;
+    height: 38px;
+    left: 880px;
+    top: 95px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.my-input1[type="text"] {
+    border: none;
+    border-bottom: 2px solid #959898;
+    height: 60px;
+    width: 416px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    color: #ffffff;
+
+    background: #2C3132;
+}
+
+.my-input1:hover{
+    border-bottom: 2px solid #ffffff;
+}
+
+
+
+.my-input2[type="text"] {
+    border: none;
+    border-bottom: 2px solid #959898;
+    height: 60px;
+    width: 635px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    color: #ffffff;
+
+    background: #2C3132;
+}
+
+.my-input2:hover{
+    border-bottom: 2px solid #ffffff;
+}
+
+
+.make-order-text-box-your-name {
+    position: absolute;
+    width: 416px;
+    height: 60px;
+    left: 0px;
+    top: 136px;
+}
+
+
+.make-order-text-box-your-phone {
+    position: absolute;
+    width: 416px;
+    height: 60px;
+    left: 440px;
+    top: 136px;
+}
+
+.make-order-text-box-your-email {
+    position: absolute;
+    width: 416px;
+    height: 60px;
+    left: 880px;
+    top: 136px;
+}
+
+.make-order-your-message {
+    /* Ваше сообщение */
+
+
+    position: absolute;
+    width: 253px;
+    height: 38px;
+    left: 0px;
+    top: 271px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.make-order-text-box-your-message {
+    position: absolute;
+    width: 635px;
+    height: 60px;
+    left: 0px;
+    top: 312px;
+
+}
+
+.make-order-add-file-button {
+    /* AddFile */
+    position: absolute;
+    width: 306px;
+    height: 60px;
+    left: 660px;
+    top: 312px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.make-order-send-file-button {
+    /* SendFile */
+    position: absolute;
+    width: 306px;
+    height: 60px;
+    left: 990px;
+    top: 312px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+
+
+}
+
+/* ------- Сделать заказ ------- */
+
+
+/*-------------Footer-------------*/
+
+.footer-frame {
+    /* Footer */
+    position: absolute;
+    width: 1296px;
+    height: 180px;
+    left: 72px;
+    top: 4662px;
+
+}
+
+.footer-address-header {
+    /* Адрес */
+
+
+    position: absolute;
+    width: 92px;
+    height: 44px;
+    left: 169px;
+    top: 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.footer-address-text {
+    /* Челябинск, ул. Пушкина 12 */
+
+
+    position: absolute;
+    width: 371px;
+    height: 38px;
+    left: 31px;
+    top: 71px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+
+.footer-phone-header {
+    /* Телефон */
+
+
+    position: absolute;
+    width: 135px;
+    height: 44px;
+    left: 580px;
+    top: 1px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+}
+
+.footer-phone-text {
+    /* +7 (495) 812-64-33 */
+
+
+    position: absolute;
+    width: 242px;
+    height: 38px;
+    left: 527px;
+    top: 70.5px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.footer-email-header {
+    /* Электронный адрес */
+
+
+    position: absolute;
+    width: 310px;
+    height: 44px;
+    left: 933px;
+    top: 0.5px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.footer-email-text {
+    /* 3dLab@gmail.com */
+
+
+    position: absolute;
+    width: 240px;
+    height: 38px;
+    left: 968px;
+    top: 70.5px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+.footer-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 240px;
+    top: 4602px;
+    background: #1F2324;
+    background-blend-mode: luminosity;
+    z-index: -1;
+}
+
+
+/*-------------Footer-------------*/

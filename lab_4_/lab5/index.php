@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"  href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+</head>
+
+<body>
+<div class="about-company-picture"></div>
+<div class="about-company-frame-text-background"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12">
+
+            <!-- Шапка -->
+            <div class="col-xl-12">
+                <div class="header header-background">
+                    <div class="col-xl-2">
+                        <div class="logo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-xl-10">
+                        <div class="header-menu">
+                            <div class="header-menu-text about-company-menu-text">
+                                <a onclick="scrollToDiv('#about-company')">О компании</a></div>
+                            <div class="header-menu-text services-menu-text">
+                                <a onclick="scrollToDiv('#service')">Услуги</a></div>
+                            <div class="header-menu-text portfolio-menu-text">
+                                <a onclick="scrollToDiv('#portfolio')">Портфолио</a></div>
+                            <div class="header-menu-text prices-menu-text">
+                                <a onclick="scrollToDiv('#cost-of-service')">Цены</a></div>
+                            <button class="my-button make-order-borders-button-menu" onclick="scrollToDiv('#make-order')">Сделать заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- О компании -->
+            <div class="col-xl-12">
+                <div class="col-xl-8">
+                    <div class="about-company-frame" id="about-company">
+                        <div class="about-company-frame-text">
+                            Мы работаем над каждым проектом индивидуально,
+                            чтобы создать 3D модели выского качества
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Услуги -->
+            <div class="col-xl-12">
+                <div class="service-frame" id="service">
+                    <div class="service-frame-header" >
+                        Услуги
+                    </div>
+
+                    <div class="service-frame-3d-models-group">
+                        <div class="service-frame-3d-models">
+                            <a id="text1">3D модели</a>
+                        </div>
+                        <div class="service-frame-3d-models-line"></div>
+                    </div>
+                    <div class="service-frame-visualisations-group">
+                        <div class="service-frame-visualisation">
+                            <a id="text2">Визуализация</a>
+                        </div>
+                        <div class="service-frame-visualisation-line"></div>
+                    </div>
+                    <div class="service-frame-3d-printing-group">
+                        <div class="service-frame-3d-printing" >
+                            <a id="text3">3D печать</a>
+                        </div>
+                        <div class="service-frame-3d-printing-line"></div>
+                    </div>
+
+                    <div class="service-frame-example" id="image">
+                        <div class="service-frame-text-block">
+                            <div class="service-frame-example-rectangle">
+                                <div class="service-frame-text" id="description"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Портфолио -->
+            <div class="col-xl-12">
+                <div class="portfolio-frame" id="portfolio">
+                    <div class="portfolio-frame-variant1">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio_1.png" alt="portfolio_1">
+                    </div>
+                    <div class="portfolio-frame-variant2">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio_2.png" alt="portfolio_2">
+                    </div>
+                    <div class="portfolio-frame-variant3">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio_3.png" alt="portfolio_3">
+                    </div>
+                    <div class="portfolio-frame-variant4">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio_4.png" alt="portfolio_4">
+                    </div>
+                    <div class="portfolio-frame-variant-middle">
+                        <div class="portfolio-frame-header">
+                            Портфолио
+                        </div>
+                        <div class="portfolio-frame-variant-middle-description">
+                            Представлен широкий спектр 3D моделей, проектов
+                            визуализации и успешно выполненных 3D печатных работ
+                        </div>
+                    </div>
+                    <div class="portfolio-frame-variant5">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio_5.png" alt="portfolio_5">
+                    </div>
+                    <div class="portfolio-frame-variant6">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio_6.png" alt="portfolio_6">
+                    </div>
+                    <div class="portfolio-frame-variant7">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio_7.png" alt="portfolio_7">
+                    </div>
+                    <div class="portfolio-frame-variant8">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/portfolio_8.png" alt="portfolio_8">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Стоимость услуг -->
+            <div class="col-xl-12">
+                <div class="cost-of-service-frame" id="cost-of-service">
+                    <div class="cost-of-service-header-text">
+                        Стоимость услуг
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="cost-service-type-of-header cost-service-frame-headers-font">
+                            Тип заказа
+                        </div>
+                        <div class="cost-service-type-of-3d-model cost-service-frame-font">
+                            3D модель
+                        </div>
+                        <div class="cost-service-type-of-visualisation cost-service-frame-font">
+                            Визуализация
+                        </div>
+                        <div class="cost-service-type-of-3d-printing cost-service-frame-font">
+                            3D печать
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="cost-service-timeline-header cost-service-frame-headers-font">
+                            Сроки
+                        </div>
+                        <div class="cost-of-service-timeline-first cost-service-frame-font">
+                            1 - 10 дней
+                        </div>
+                        <div class="cost-of-service-timeline-second cost-service-frame-font">
+                            3 - 14 дней
+                        </div>
+                        <div class="cost-of-service-timeline-thirty cost-service-frame-font">
+                            3 - 7 дней
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="cost-service-cost-header cost-service-frame-headers-font">
+                            Стоимость
+                        </div>
+                        <div class="cost-of-service-cost-first cost-service-frame-font">
+                            от 5000 ₽
+                        </div>
+                        <div class="cost-of-service-cost-second cost-service-frame-font">
+                            от 8000 ₽
+                        </div>
+                        <div class="cost-of-service-cost-thirty cost-service-frame-font">
+                            от 1000 ₽
+                        </div>
+                    </div>
+                    <div class="cost-service-frame-line-first"></div>
+                    <div class="cost-service-frame-line-second"></div>
+                    <div class="cost-service-frame-line-thirty"></div>
+                </div>
+            </div>
+
+
+            <div class="col-xl-12">
+                <div class="make-order-frame" id="make-order">
+                    <div class="make-order-header-text">Сделать заказ</div>
+                    <div class="make-order-your-name">Ваше имя</div>
+                    <div class="make-order-text-box-your-name">
+                        <input type="text" class="my-input1">
+                    </div>
+                    <div class="make-order-your-phone">Ваш телефон</div>
+                    <div class="make-order-text-box-your-phone">
+                        <input type="text" class="my-input1">
+                    </div>
+                    <div class="make-order-your-email">Ваш E-mail</div>
+                    <div class="make-order-text-box-your-email">
+                        <input type="text" class="my-input1">
+                    </div>
+                    <div class="make-order-your-message">Ваше сообщение</div>
+                    <div class="make-order-text-box-your-message">
+                        <input type="text" class="my-input2">
+                    </div>
+                    <button class="my-button make-order-add-file-button">Прикрепить файл</button>
+                    <button class="my-button make-order-send-file-button">Отправить</button>
+                </div>
+            </div>
+
+            <div class="col-xl-12">
+                <div class="footer-frame">
+                    <div class="footer-address-header">Адрес</div>
+                    <div class="footer-address-text">Челябинск, ул. Пушкина 12</div>
+                    <div class="footer-phone-header">Телефон</div>
+                    <div class="footer-phone-text">+7 (495) 812-64-33</div>
+                    <div class="footer-email-header">Электронный адрес</div>
+                    <div class="footer-email-text">3dLab@gmail.com</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-background"></div>
+    </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+
+</body>
+
+</html>
